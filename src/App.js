@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { toast } from "react-toastify";
+import Loader from "./components/shared/Loader/index.js";
+
+require("dotenv").config();
+const Home = React.lazy(() => import("./pages/Home/index"));
+export const Toastify = (type, msg) => {
+  switch (type) {
+    case "success":
+      toast.success(msg);
+      break;
+    case "warning":
+      toast.warn(msg);
+      break;
+    case "error":
+      toast.error(msg);
+      break;
+    case "info":
+      toast.info(msg);
+      break;
+    default:
+      toast.info(msg);
+      break;
+  }
+};
 
 function App() {
+  toast.configure({ hideProgressBar: true });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback={<Loader />}>
+      <Router>
+        <Routes>
+          <Route path="/" component={<Home />} />
+        </Routes>
+      </Router>
+    </Suspense>
   );
 }
 
