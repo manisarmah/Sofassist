@@ -1,11 +1,11 @@
 import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { toast } from "react-toastify";
-import Home from "./pages/Home/index.js";
+
 import Loader from "./components/shared/Loader/index.js";
 
 require("dotenv").config();
-
+const Home = React.lazy(() => import("./pages/Home/index.js"));
 export const Toastify = (type, msg) => {
   switch (type) {
     case "success":
