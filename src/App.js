@@ -6,6 +6,7 @@ import Loader from "./components/shared/Loader/index.js";
 
 require("dotenv").config();
 const Home = React.lazy(() => import("./pages/Home/index.js"));
+const NewUserLogin = React.lazy(() => import("./pages/NewUserLogin/index.js"));
 export const Toastify = (type, msg) => {
   switch (type) {
     case "success":
@@ -33,6 +34,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/join" element={<NewUserLogin />} />
         </Routes>
       </Router>
     </Suspense>
