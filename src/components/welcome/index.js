@@ -2,6 +2,7 @@ import React from "react";
 import { FaInfoCircle, FaArrowLeft } from "react-icons/fa";
 import "./styles.css";
 import Login from "../login";
+import Signup from "../createAccount";
 const Welcome = () => {
   return (
     <div>
@@ -35,7 +36,7 @@ const Welcome = () => {
               </div>
             </div>
             <br />
-            <br />
+
             <div></div>
           </div>
         </div>
