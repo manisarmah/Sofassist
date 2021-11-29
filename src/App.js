@@ -5,7 +5,8 @@ import { toast } from "react-toastify";
 import Loader from "./components/shared/Loader/index.js";
 
 require("dotenv").config();
-const Home = React.lazy(() => import("./pages/Home/index.js"));
+
+const Welcome = React.lazy(() => import("./components/welcome/index.js"));
 export const Toastify = (type, msg) => {
   switch (type) {
     case "success":
@@ -32,7 +33,7 @@ function App() {
     <Suspense fallback={<Loader />}>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Welcome />} />
         </Routes>
       </Router>
     </Suspense>

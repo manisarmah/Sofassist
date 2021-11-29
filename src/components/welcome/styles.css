@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.full-height {
+  height: 100vh;
+  background: #9b51e0;
+}
+.leftContainer {
+  width: 25%;
+  height: 100%;
+  background: #9b51e0;
+  float: left;
+  text-align: center;
+}
+.rightContainer {
+  width: 75%;
+  height: 100%;
+  background: #fff;
+  float: right;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.leftContainerItems {
+  text-align: center;
+  margin-top: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.leftContainerItems .appName {
+  font-size: 1.6rem;
+  color: #fff;
+  padding-left: 2rem;
+  position: relative;
+  bottom: 9px;
+}
+.rightContainerItems {
+  padding: 3.5rem;
+}
+
+.backButton {
+  float: left;
+  font-size: 1.3rem;
+}
+.infoButton {
+  float: right;
+  font-size: 1.3rem;
+  color: #212121;
+}
