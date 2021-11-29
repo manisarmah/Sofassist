@@ -1,22 +1,14 @@
 import React from "react";
 import classes from "./loader.module.css";
-import AcUnitIcon from "@material-ui/icons/AcUnit";
+import image from "./loader.svg";
 
-const Loader = () => {
+const Home = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-      }}
-    >
-      <div class={classes.loader}>
-        <AcUnitIcon style={{ color: "#3498db" }} />
-      </div>
+    <div class={classes.loader}>
+      <img src={image} alt="" className={classes.image} />
+      <div class={classes.loader__element}></div>
     </div>
   );
 };
 
-export default Loader;
+export default Home;
