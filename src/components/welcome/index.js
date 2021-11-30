@@ -2,13 +2,11 @@ import React from "react";
 import { FaInfoCircle, FaArrowLeft } from "react-icons/fa";
 import "./styles.css";
 import Login from "../login";
-<<<<<<< HEAD
 import NewuserJoin from "../NewUserLogin/index";
+import ImageUpload from "../Imageupload/index"
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-=======
 import Signup from "../createAccount";
->>>>>>> 7b414dbcd2cea1e98acfafbe665478a7a8acfd46
 const Welcome = () => {
   return (
       <div>
@@ -44,15 +42,13 @@ const Welcome = () => {
               <br />
               <br />
               <div>
-              <NewuserJoin/>
+              {/* <NewuserJoin/> */}
+              <ImageUpload/>
               </div>
             </div>
-<<<<<<< HEAD
-=======
             <br />
 
             <div></div>
->>>>>>> 7b414dbcd2cea1e98acfafbe665478a7a8acfd46
           </div>
         </div>
       </div>
