@@ -25,18 +25,18 @@ const Wrap = styled.div`
   border-radius: 10px;
   box-shadow: 1px 2px 5px rgb(189 189 189);
   font-family: "Roboto", sans-serif;
-  &:hover{
-      img,h4{
-          transform: scale(1.1);
-      }
+  &:hover {
+    img,
+    h4 {
+      transform: scale(1.1);
+    }
   }
 `;
 const Image = styled.img`
-margin-top: 20px;
+  margin-top: 20px;
   width: 50px;
-  margin-bottom: -10px;
+  /* margin-bottom: -10px; */
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-
 `;
 const Text = styled.h4`
   font-weight: 500;
