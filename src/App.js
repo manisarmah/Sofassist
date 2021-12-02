@@ -1,10 +1,10 @@
 import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { toast } from "react-toastify";
-
 import Loader from "./components/shared/Loader/index.js";
 
 require("dotenv").config();
+const Home = React.lazy(() => import("./pages/Home/index.js"));
 
 const Welcome = React.lazy(() => import("./components/welcome/index.js"));
 const Dashboard = React.lazy(() => import("./components/dashboard/index.js"));

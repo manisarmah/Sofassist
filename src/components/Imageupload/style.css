@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* .App {
+    min-height: 100vh;
+    background: transparent;
+    display: flex;
+  } */
+.text {
+  margin: 20px;
+}
+.text h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+.buttons {
+  display: flex;
+  width: 45%;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.skip,
+.submit {
+  background-color: #fff;
+  color: #9b51e0;
+  padding: 9px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.submit {
+  color: #fff;
+  background-color: #9b51e0;
+}
+.errorMsg {
+  color: red;
+  font-size: 24px;
+  margin: 3px 0;
+}
+
+.imgPreview {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  margin-left: 30px;
+}
+
+.imgPreview input[type="file"] {
+  display: none;
+}
+
+.imgPreview .customFileUpload {
+  color: #55d6d6;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 10px 0 0 0;
+  padding: 14px 10px;
+  background: #55d6d6;
+  color: #0a0a0a;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}

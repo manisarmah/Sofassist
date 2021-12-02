@@ -1,9 +1,28 @@
 import React from "react";
 import { FaInfoCircle, FaArrowLeft } from "react-icons/fa";
-import "./styles.css";
-import Login from "../login";
+import NewuserJoin from "../NewUserLogin/index";
+import CreateAccount from "../createAccount/index";
+import Login from "../login/index";
+import ImageUpload from "../Imageupload/index";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Signup from "../createAccount";
+import "./styles.css";
 const Welcome = () => {
+  function getContent(step) {
+    switch (step) {
+      case 0:
+        return <NewuserJoin />;
+
+      case 1:
+        return <ImageUpload />;
+      case 2:
+        return <Login />;
+      case 3:
+        return <CreateAccount />;
+      default:
+        return "unknown step";
+    }
+  }
   return (
     <div>
       <div class="full-height">
@@ -36,11 +55,12 @@ const Welcome = () => {
               </div>
             </div>
             <br />
-
-            <div>
-              <Signup />
-            </div>
+            <br />
+            <div>{getContent(2)}</div>
           </div>
+          <br />
+
+          <div></div>
         </div>
       </div>
     </div>
