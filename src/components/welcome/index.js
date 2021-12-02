@@ -6,7 +6,7 @@ import Login from "../login/index";
 import ImageUpload from "../Imageupload/index";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Signup from "../createAccount";
-
+import "./styles.css"
 const Welcome = () => {
   function getContent(step) {
     switch (step) {
@@ -55,7 +55,7 @@ const Welcome = () => {
             <br />
             <br />
             <div>
-              {getContent(2)}
+              {getContent(0)}
             </div>
           </div>
           <br />
