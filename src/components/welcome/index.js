@@ -6,17 +6,19 @@ import Login from "../login/index";
 import ImageUpload from "../Imageupload/index";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Signup from "../createAccount";
-import "./styles.css"
+import "./styles.css";
 const Welcome = () => {
   function getContent(step) {
     switch (step) {
       case 0:
         return <NewuserJoin />;
-  
+
       case 1:
         return <ImageUpload />;
       case 2:
         return <Login />;
+      case 3:
+        return <CreateAccount />;
       default:
         return "unknown step";
     }
@@ -54,9 +56,7 @@ const Welcome = () => {
             </div>
             <br />
             <br />
-            <div>
-              {getContent(0)}
-            </div>
+            <div>{getContent(2)}</div>
           </div>
           <br />
 
