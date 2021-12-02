@@ -7,6 +7,7 @@ import Loader from "./components/shared/Loader/index.js";
 require("dotenv").config();
 
 const Welcome = React.lazy(() => import("./components/welcome/index.js"));
+const Dashboard = React.lazy(() => import("./components/dashboard/index.js"));
 export const Toastify = (type, msg) => {
   switch (type) {
     case "success":
@@ -34,6 +35,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Welcome />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </Router>
     </Suspense>

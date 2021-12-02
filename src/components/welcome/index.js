@@ -37,7 +37,9 @@ const Welcome = () => {
             </div>
             <br />
 
-            <div></div>
+            <div>
+              <Signup />
+            </div>
           </div>
         </div>
       </div>
