@@ -1,15 +1,49 @@
 import React from "react";
 import "./styles.css";
 import IconSide from "../otherIcon";
-import Profile from './Rectangle 17.svg'
-// import icons from "./Icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import {PersonAdd, FolderOpen, Message, PeopleAltOutlined, GroupAdd, Timer, Brightness6Sharp, Settings} from "@mui/icons-material";
+import Profile from "./Rectangle 17.svg";
+import { useState } from "react";
+import {
+  PersonAdd,
+  FolderOpen,
+  Message,
+  PeopleAltOutlined,
+  GroupAdd,
+  Timer,
+  Brightness6Sharp,
+  Settings,
+} from "@mui/icons-material";
+
 const CustomColor = { color: "rgba(155, 81, 224, 1)" };
-const icons = [<PersonAdd style={CustomColor} />,<FolderOpen style={CustomColor} />,<Message style={CustomColor} />,<PeopleAltOutlined style={CustomColor} />,<GroupAdd style={CustomColor} />,<Timer style={CustomColor} />,<Brightness6Sharp style={CustomColor} />,<Settings style={CustomColor} />];
+const icons = [
+  { element: <PersonAdd style={CustomColor} />, isClicked: false, index: 0 },
+  { element: <FolderOpen style={CustomColor} />, isClicked: false, index: 1 },
+  { element: <Message style={CustomColor} />, isClicked: true, index: 2 },
+  {
+    element: <PeopleAltOutlined style={CustomColor} />,
+    isClicked: false,
+    index: 3,
+  },
+  { element: <GroupAdd style={CustomColor} />, isClicked: false, index: 4 },
+  { element: <Timer style={CustomColor} />, isClicked: false, index: 5 },
+  {
+    element: <Brightness6Sharp style={CustomColor} />,
+    isClicked: false,
+    index: 6,
+  },
+  { element: <Settings style={CustomColor} />, isClicked: false, index: 7 },
+];
 
 const Dashboard = () => {
+  const [Icons, setIcons] = useState(icons);
+  const handleClick = (idx) => {
+    icons[2].isClicked = false;
+    setIcons(
+      icons.map((icon) =>
+        icon.index == idx ? { ...icon, isClicked: true } : icon
+      )
+    );
+  };
   return (
     <div>
       <div className="Dashboard">
@@ -20,10 +54,16 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="other_icons">
-            {/* <FontAwesomeIcon icon="camera"/> */}
-            {/* <FontAwesomeIcon icon="fas fa-stroopwafel" style={{color:"black"}}/> */}
-            {icons.map((icon) => {
-              return <IconSide Icon={icon} />;
+            {Icons.map((icon, i) => {
+              return (
+                <IconSide
+                  Icon={icon.element}
+                  iterator={i}
+                  handleClick={handleClick}
+                  index={icon.index}
+                  isClicked={icon.isClicked}
+                />
+              );
             })}
           </div>
         </div>

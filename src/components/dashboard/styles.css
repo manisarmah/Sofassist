@@ -3,7 +3,7 @@ body {
   height: 100%;
   margin: 0;
 }
-*{
+* {
   box-sizing: border-box;
 }
 .Dashboard {
@@ -16,26 +16,34 @@ body {
   float: left;
   text-align: center;
   border-right: 0.2vh solid rgb(182, 175, 175);
-  padding: 3vh 0 ;
+  padding: 3vh 0;
 }
-.sideNav .profile_pic{
+.sideNav .profile_pic {
   height: 12vh;
   /* background-color: blue; */
   padding: 2vh;
 }
-.sideNav .profile_pic .inner_box{
+.sideNav .other_icons .focus {
+  border-right: 4px solid rgba(155, 81, 224, 1);
+}
+.darkMode:focus {
+  border-right: none;
+}
+
+.sideNav .profile_pic .inner_box {
   height: 100%;
   width: 100%;
   border-radius: 0.5rem;
   overflow: hidden;
 }
-.sideNav .profile_pic .inner_box img{
+
+.sideNav .profile_pic .inner_box img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   transform: scale(1.1);
 }
-.sideNav .other_icons{
+.sideNav .other_icons {
   height: 82vh;
   /* background-color: red; */
 }

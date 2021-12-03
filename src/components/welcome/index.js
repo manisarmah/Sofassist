@@ -4,8 +4,7 @@ import NewuserJoin from "../NewUserLogin/index";
 import CreateAccount from "../createAccount/index";
 import Login from "../login/index";
 import ImageUpload from "../Imageupload/index";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Signup from "../createAccount";
+
 import "./styles.css";
 const Welcome = () => {
   function getContent(step) {
@@ -56,7 +55,7 @@ const Welcome = () => {
             </div>
             <br />
             <br />
-            <div>{getContent(2)}</div>
+            <div>{getContent(3)}</div>
           </div>
           <br />
 

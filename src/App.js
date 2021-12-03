@@ -2,14 +2,9 @@ import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { toast } from "react-toastify";
 import Loader from "./components/shared/Loader/index.js";
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
-
-library.add(fab, faCheckSquare, faCoffee)
 
 require("dotenv").config();
-const Home = React.lazy(() => import("./pages/Home/index.js"));
+// const Home = React.lazy(() => import("./pages/Home/index.js"));
 
 const Welcome = React.lazy(() => import("./components/welcome/index.js"));
 const Dashboard = React.lazy(() => import("./components/dashboard/index.js"));
