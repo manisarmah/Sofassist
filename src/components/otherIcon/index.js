@@ -2,24 +2,12 @@ import React from "react";
 import "./style.css";
 import { useState } from "react";
 
-const IconSide = ({ Icon, handleClick, index, isClicked }) => {
-  const [isDark, setIsDark] = useState(false);
-  const darkModeF = () => {
-    setIsDark(!isDark);
-  };
+const IconSide = ({ Icon, iterator, handleClick, index, isClicked }) => {
   return (
     <>
-      <div className={isClicked && index !== 6 ? "onClickOuter" : ""}>
-        <button
-          className={index === 6 ? "darkMode" : "outer_div"}
-          onClick={() => handleClick(index)}
-        >
-          <div
-            className={isDark ? "inner_div rotator" : "inner_div"}
-            onClick={index === 6 && darkModeF}
-          >
-            {Icon}
-          </div>
+      <div className={isClicked ? "onClickOuter" : ""}>
+        <button className="outer_div" onClick={() => handleClick(index)}>
+          <div className="inner_div">{Icon}</div>
         </button>
       </div>
     </>
