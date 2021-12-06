@@ -4,6 +4,8 @@ import IconSide from "../otherIcon";
 import DarkModeIcon from "../darkModeIcon";
 import Profile from "./Rectangle 17.svg";
 import { useState } from "react";
+
+import TopBar from "../topBar";
 import {
   PersonAdd,
   FolderOpen,
@@ -11,7 +13,6 @@ import {
   PeopleAltOutlined,
   GroupAdd,
   Timer,
-  Brightness6Sharp,
   Settings,
 } from "@mui/icons-material";
 import TopNav from "../topNav";
@@ -30,12 +31,6 @@ const icons = [
   { element: <Timer style={CustomColor} />, isClicked: false, index: 5 },
   { element: <Settings style={CustomColor} />, isClicked: false, index: 6 },
 ];
-const darkmodeIcon =
-{
-  element: <Brightness6Sharp style={CustomColor} />,
-  isClicked: false,
-  index: 6,
-}
 
 const Dashboard = () => {
   const [Icons, setIcons] = useState(icons);
@@ -67,16 +62,20 @@ const Dashboard = () => {
                 />
               );
             })}
-            <div><DarkModeIcon/></div>
+            <div>
+              <DarkModeIcon />
+            </div>
           </div>
         </div>
         <div className="rightContainer">
           <div className="topNav">
-            <TopNav/>
+            <TopNav />
           </div>
           <div className="bottomContainer">
             <div className="bottomLeftContainer">
-              <div className="topBar"></div>
+              <div className="topBar">
+                <TopBar />
+              </div>
               <div className="bottomArea"></div>
             </div>
             <div className="bottomRightContainer"></div>

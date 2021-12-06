@@ -8,12 +8,14 @@ body {
 }
 .Dashboard {
   height: 100vh;
+  width: 100%;
+  display: flex;
 }
 .sideNav {
   width: 6%;
   height: 100%;
   background: #ffffff;
-  float: left;
+  /* float: left; */
   text-align: center;
   border-right: 0.2vh solid rgb(182, 175, 175);
   padding: 3vh 0;
@@ -32,7 +34,7 @@ body {
 
 .sideNav .profile_pic .inner_box {
   height: 100%;
-  width: 100%;
+  width: 94%;
   border-radius: 0.5rem;
   overflow: hidden;
 }
@@ -45,26 +47,35 @@ body {
 }
 .sideNav .other_icons {
   height: 82vh;
-  /* background-color: red; */
 }
 .rightContainer {
   background: #fff;
+  width: 94%;
+  height: 100vh;
 }
 .topNav {
   width: 100%;
   height: 12vh;
   border-bottom: 0.2vh solid rgb(121, 117, 117);
 }
+
 .bottomContainer {
-  height: 100%;
-}
-.bottomLeftContainer {
-  width: 35%;
+  width: 100%;
   height: 87.8vh;
-  background-color: #e9e9ffa2;
+  display: flex;
 }
 .topBar {
   width: 100%;
   height: 12vh;
   background-color: #e9e9ff;
+}
+
+.bottomLeftContainer {
+  width: 32%;
+  height: 87.8vh;
+  background-color: #e9e9ffa2;
+}
+.bottomRightContainer {
+  width: 68%;
+  height: 87.8vh;
 }

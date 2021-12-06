@@ -1,0 +1,52 @@
+.searchBar {
+  height: 6.5vh;
+  width: 70%;
+  background: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  padding-left: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.082);
+}
+.topBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.searchBar input {
+  padding: 0 10px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1.1rem;
+  color: rgba(44, 42, 42, 0.644);
+}
+.searchBar input::placeholder {
+  color: #bdbdbd;
+}
+.contactList {
+  background: #bb6bd9;
+  height: 6.5vh;
+  width: 18%;
+  border-radius: 7px;
+}
+.contactList button {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 4px;
+  background: transparent;
+  outline: none;
+  border: none;
+  transition: all ease 0.6s;
+}
+.contactList button:hover {
+  background: #b946e2;
+  cursor: pointer;
+}

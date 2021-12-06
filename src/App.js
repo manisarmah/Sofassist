@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { toast } from "react-toastify";
 import Loader from "./components/shared/Loader/index.js";
-
+import "./App.css";
 require("dotenv").config();
 // const Home = React.lazy(() => import("./pages/Home/index.js"));
 
