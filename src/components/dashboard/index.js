@@ -40,7 +40,7 @@ const Dashboard = () => {
     icons[2].isClicked = false;
     setIcons(
       icons.map((icon) =>
-        icon.index == idx ? { ...icon, isClicked: true } : icon
+        icon.index === idx ? { ...icon, isClicked: true } : icon
       )
     );
   };
@@ -54,11 +54,10 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="other_icons">
-            {Icons.map((icon, i) => {
+            {Icons.map((icon) => {
               return (
                 <IconSide
                   Icon={icon.element}
-                  iterator={i}
                   handleClick={handleClick}
                   index={icon.index}
                   isClicked={icon.isClicked}
