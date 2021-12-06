@@ -1,40 +1,16 @@
 import React from "react";
 import { Carousel } from "@trendyol-js/react-carousel";
-import DarkModeIcon from "../darkModeIcon";
+import StoryIcon from "../storyIcon";
 import "./style.css";
+import images from '../StoryImages/images'
 
 const StorySlider = () => {
   return (
     <>
-      {/* <Carousel show={10.5} slide={10} swiping={true}>
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-      </Carousel> */}
-      <Carousel show={10.5} slide={1} swiping={true} className="corousel">
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
+      <Carousel show={10.5} slide={3} swiping={true} className="corousel">
+        {images.map((image)=>{
+         return <StoryIcon src={image}/>
+        })}
       </Carousel>
     </>
   );

@@ -1,0 +1,39 @@
+.outer_story_div {
+  background: linear-gradient(
+    52deg,
+    rgba(187, 107, 217, 1) 32%,
+    rgba(248, 229, 255, 1) 82%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vh;
+  height: 8vh;
+  border-radius: 10px;
+}
+.outer_story_seen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vh;
+  height: 8vh;
+  border-radius: 10px;
+}
+.inner_story_div{
+    height: 6.8vh;
+    width: 6.8vh;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.inner_story_div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.container_story{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
