@@ -1,0 +1,10 @@
+.styles-module_carousel-arrow__26sRw{
+    background-color: red;
+    padding: 10px;
+    display: none;
+}
+.corousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

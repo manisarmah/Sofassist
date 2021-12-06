@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import IconSide from "../otherIcon";
+import DarkModeIcon from "../darkModeIcon";
 import Profile from "./Rectangle 17.svg";
 import { useState } from "react";
 import {
@@ -13,6 +14,7 @@ import {
   Brightness6Sharp,
   Settings,
 } from "@mui/icons-material";
+import TopNav from "../topNav";
 
 const CustomColor = { color: "rgba(155, 81, 224, 1)" };
 const icons = [
@@ -26,13 +28,14 @@ const icons = [
   },
   { element: <GroupAdd style={CustomColor} />, isClicked: false, index: 4 },
   { element: <Timer style={CustomColor} />, isClicked: false, index: 5 },
-  {
-    element: <Brightness6Sharp style={CustomColor} />,
-    isClicked: false,
-    index: 6,
-  },
-  { element: <Settings style={CustomColor} />, isClicked: false, index: 7 },
+  { element: <Settings style={CustomColor} />, isClicked: false, index: 6 },
 ];
+const darkmodeIcon =
+{
+  element: <Brightness6Sharp style={CustomColor} />,
+  isClicked: false,
+  index: 6,
+}
 
 const Dashboard = () => {
   const [Icons, setIcons] = useState(icons);
@@ -65,10 +68,13 @@ const Dashboard = () => {
                 />
               );
             })}
+            <div><DarkModeIcon/></div>
           </div>
         </div>
         <div className="rightContainer">
-          <div className="topNav"></div>
+          <div className="topNav">
+            <TopNav/>
+          </div>
           <div className="bottomContainer">
             <div className="bottomLeftContainer">
               <div className="topBar"></div>
