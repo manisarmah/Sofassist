@@ -6,13 +6,7 @@ import "./style.css";
 const StorySlider = () => {
   return (
     <>
-      {/* <Carousel show={10.5} slide={10} swiping={true}>
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-        <DarkModeIcon />
-      </Carousel> */}
-      <Carousel show={10.5} slide={1} swiping={true} className="corousel">
+      <Carousel show={10.5} slide={3} swiping={true} className="corousel">
         <DarkModeIcon />
         <DarkModeIcon />
         <DarkModeIcon />
