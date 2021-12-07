@@ -1,0 +1,16 @@
+.chatList_texts{
+    font-size: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6%;
+}
+.chatList_texts h1{
+    margin-bottom: 2%;
+}
+.chatList_texts p{
+    font-size: 0.6rem;
+}

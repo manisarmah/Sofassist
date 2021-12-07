@@ -4,6 +4,7 @@ import IconSide from "../otherIcon";
 import DarkModeIcon from "../darkModeIcon";
 import Profile from "./Rectangle 17.svg";
 import { useState } from "react";
+import chatListDetails from "../ChatListDetails/chatListdetails";
 
 import TopBar from "../topBar";
 import {
@@ -16,6 +17,7 @@ import {
   Settings,
 } from "@mui/icons-material";
 import TopNav from "../topNav";
+import ChatListInd from "../chatListIndi";
 
 const CustomColor = { color: "rgba(155, 81, 224, 1)" };
 const icons = [
@@ -76,7 +78,11 @@ const Dashboard = () => {
               <div className="topBar">
                 <TopBar />
               </div>
-              <div className="bottomArea"></div>
+              <div className="bottomArea">
+              {chatListDetails.map((chatdetail)=>{
+              return  <ChatListInd src={chatdetail.image} name={chatdetail.name} msg={chatdetail.messagePH}/>
+              })}
+              </div>
             </div>
             <div className="bottomRightContainer"></div>
           </div>

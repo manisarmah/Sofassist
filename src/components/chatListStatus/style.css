@@ -1,0 +1,19 @@
+.chatListStatus_outer_div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+width: 100%;
+}
+
+.deliverIcon{
+padding: 8.8%;
+}
+.chatList_time{
+
+}
+.chatList_time p{
+    font-size: 0.58rem;
+    font-weight: bold;
+}
