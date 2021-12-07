@@ -10,5 +10,8 @@ const chatListDetails = [
   { image: image3, name: "Princhi Pawan", messagePH: "Vamos !!!" },
   { image: image4, name: "Manish Cooper", messagePH: "Wait a minute" },
   { image: image5, name: "Jane Sharma", messagePH: "Ham soone ja rha hain" },
+  { image: image5, name: "Jane Sharma", messagePH: "Ham soone ja rha hain" },
+  { image: image5, name: "Jane Sharma", messagePH: "Ham soone ja rha hain" },
+  { image: image5, name: "Jane Sharma", messagePH: "Ham soone ja rha hain" },
 ];
 export default chatListDetails;

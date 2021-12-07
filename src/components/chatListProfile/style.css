@@ -1,12 +1,12 @@
-.profile_chatlist{
-    height: 47px;
-    width: 47px;
-    border-radius: 50%;
-    background-color: orange;
-    overflow: hidden;
+.profile_chatlist {
+  height: 47px;
+  width: 47px;
+  border-radius: 50%;
+
+  overflow: hidden;
 }
-.profile_chatlist img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.profile_chatlist img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

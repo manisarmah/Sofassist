@@ -79,3 +79,31 @@ body {
   width: 68%;
   height: 87.8vh;
 }
+.bottomArea {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 74.8vh;
+  width: 100%;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-button {
+  height: 12px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bb6bd9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #af3dd8;
+}
