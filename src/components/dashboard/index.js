@@ -18,6 +18,7 @@ import {
 } from "@mui/icons-material";
 import TopNav from "../topNav";
 import ChatListInd from "../chatListIndi";
+import ChatInterface from "../chatInterface";
 
 const CustomColor = { color: "rgba(155, 81, 224, 1)" };
 const icons = [
@@ -84,7 +85,9 @@ const Dashboard = () => {
               })}
               </div>
             </div>
-            <div className="bottomRightContainer"></div>
+            <div className="bottomRightContainer">
+              <ChatInterface/>
+            </div>
           </div>
         </div>
       </div>
