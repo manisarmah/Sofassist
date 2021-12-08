@@ -1,6 +1,11 @@
-.chat_interface_container{
-    height: 100%;
-    width: 100%;
-    background-color: red;
-    /* z-index: 1; */
+.chat_interface_container {
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  /* z-index: 1; */
+}
+.chat_interface_input {
+  height: 15vh;
+  width: 100%;
+  background-color: blue;
 }
