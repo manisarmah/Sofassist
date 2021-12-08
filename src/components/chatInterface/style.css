@@ -1,13 +1,13 @@
 .chat_interface_container{
     height: 100%;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     /* z-index: 1; */
 }
 .chat_interface_top_bar{
     height: 12vh;
     width: 100%;
-    background-color: blue;
+    /* background-color: blue; */
 }
 .chat_interface_main{
     height:60.8vh ;
