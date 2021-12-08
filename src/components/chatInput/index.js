@@ -27,7 +27,9 @@ const ChatInput = () => {
       </div>
       <div className="searchBarInput">
         <div className="searchBarAdd">
-          <Add size={{ fontSize: 40 }} style={{ color: "#828282" }} />
+          <button>
+            <Add style={{ color: "#828282", fontSize: 30 }} />
+          </button>
         </div>
         <div className="searchBarMain">
           <input
@@ -39,22 +41,17 @@ const ChatInput = () => {
         </div>
         <div className="searchBarIcons">
           <button>
-            <TimerOutlinedIcon
-              size={{ fontSize: 30 }}
-              style={{ color: "#828282" }}
-            />
+            <TimerOutlinedIcon style={{ color: "#828282", fontSize: 25 }} />
           </button>
           <button onClick={() => setShowPicker((val) => !val)}>
             {" "}
             <EmojiEmotionsOutlinedIcon
-              size={{ fontSize: 30 }}
-              style={{ color: "#828282" }}
+              style={{ color: "#828282", fontSize: 25 }}
             />
           </button>
           <button>
             <KeyboardVoiceOutlinedIcon
-              size={{ fontSize: 30 }}
-              style={{ color: "#828282" }}
+              style={{ color: "#828282", fontSize: 25 }}
             />
           </button>
         </div>
@@ -62,8 +59,7 @@ const ChatInput = () => {
       <div className="sendInput">
         <button>
           <SendOutlinedIcon
-            size={{ fontSize: 25 }}
-            style={{ color: "#9B51E0", fontWeight: "300" }}
+            style={{ color: "#9B51E0", fontWeight: "300", fontSize: 27 }}
           />
         </button>
       </div>
