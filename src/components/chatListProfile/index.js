@@ -1,6 +1,6 @@
 import React from "react";
 import './style.css'
-import ProfilePic from '../StoryImages/images'
+// import ProfilePic from '../StoryImages/images'
 
 
 const ChatListProfile = ({src}) => {

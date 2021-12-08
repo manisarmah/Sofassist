@@ -6,7 +6,7 @@ const ChatListStatus = () => {
     return (
         <div className="chatListStatus_outer_div">
             <div className="deliverIcon">
-                {symbols[1]}
+                {symbols[2]}
             </div>
             <div className="chatList_time"><p>02:34 am</p></div>
         </div>

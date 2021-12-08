@@ -87,6 +87,7 @@ body {
 }
 ::-webkit-scrollbar {
   width: 5px;
+  height: 15px;
 }
 
 /* Track */
@@ -95,7 +96,7 @@ body {
 }
 
 ::-webkit-scrollbar-button {
-  height: 12px;
+  height: 25vh;
 }
 
 /* Handle */
