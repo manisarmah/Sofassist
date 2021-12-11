@@ -1,3 +1,26 @@
-.MuiTouchRipple-root.css-8je8zh-MuiTouchRipple-root{
-    width: 100%;
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
+.outer_div_popper {
+    position: absolute;
+    top: 68px;
+    right: 12px;
+    background-color: #FBEFFF;
+    border-radius: 4px;
+    width: 10vw;
+    padding: 5px 26px;
+}
+.outer_div_popper li {
+    width: 100%;
+  list-style: none;
+  text-align: center;
+  margin: 1vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 1px solid black;
+}
+.outer_div_popper li:last-child{
+    border: none;
+} 
