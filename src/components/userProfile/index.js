@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import chatListDetails from "../ChatListDetails/chatListdetails";
 import "./style.css";
 import ModeEditOutlinedIcon from "@mui/icons-material/ModeEditOutlined";
 
 const UserProfile = () => {
+    const [isEdit, setisEdit] = useState(true);
+    const handleCLick = ()=>{
+        setisEdit(!isEdit);
+    }
   return (
     <div className="user_profile_outer_div">
       <div className="user_profile_upper_div_purple">
@@ -22,26 +26,38 @@ const UserProfile = () => {
       <div className="user_profile_upper_div_white">
         <div className="Input">
           <div className="input_div">
-            <input
+          {    isEdit ?    <input
               type="text"
               disabled
               placeholder=""
               value="Wade Warren"
               required
-            />
-            <div className="btn">
+            />: <input
+              type="text"
+              
+              placeholder=""
+              value="Wade Warren"
+              required
+            /> }
+            <div className="btn" onClick={handleCLick}>
               <ModeEditOutlinedIcon style={{ color: "#828282" }} />
             </div>
           </div>
           <div className="input_div">
-            <input
+  {    isEdit ?    <input
               type="text"
               disabled
               placeholder=""
               value="wade.warren@app.com"
               required
-            />
-            <div className="btn">
+            />: <input
+              type="text"
+              
+              placeholder=""
+              value="wade.warren@app.com"
+              required
+            /> }
+            <div className="btn"  onClick={handleCLick}>
               <ModeEditOutlinedIcon style={{ color: "#828282" }} />
             </div>
           </div>

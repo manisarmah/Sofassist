@@ -20,7 +20,8 @@ import TopNav from "../topNav";
 import ChatListInd from "../chatListIndi";
 import ChatInterface from "../chatInterface";
 import OtherProfile from "../otherProfile";
-const test = 3;
+import UserProfile from "../userProfile";
+const test = 2;
 const CustomColor = { color: "rgba(155, 81, 224, 1)" };
 const icons = [
   { element: <PersonAdd style={CustomColor} />, isClicked: false, index: 0 },
