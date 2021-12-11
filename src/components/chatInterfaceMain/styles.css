@@ -1,14 +1,18 @@
 .encryptedDialog {
   width: 100%;
-  height: 5vh;
+  height: 6vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5vh 0 1vh;
+  padding: 1.5vh 0 1.5vh;
   /* background-color: blue; */
 }
+
 .chatMain {
   height: 57.8vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  user-select: text;
   /* background-color: brown; */
 }
 /* .chatMainDiv {
@@ -24,10 +28,11 @@
   float: left;
   margin: 1vh 8vh;
   border-radius: 5px;
-  padding: 8px;
+  padding: 8px 8px 8px 15px;
   font-size: 0.9rem;
   background-color: #f5f5f5;
   backdrop-filter: blur(20px);
+  display: flex;
 }
 .chatMainRight {
   width: 40%;
@@ -36,14 +41,15 @@
   float: right;
   margin: 1vh 8vh;
   border-radius: 5px;
-  padding: 8px;
+  padding: 8px 8px 8px 15px;
   font-size: 0.9rem;
   background-color: #faecff;
   backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-/* .chatMain p {
-  height: 100%;
-  width: 40%;
-  background-color: red;
-  float: left;
-} */
+.sentStatus {
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+}

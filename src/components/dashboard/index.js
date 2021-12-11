@@ -5,7 +5,7 @@ import DarkModeIcon from "../darkModeIcon";
 import Profile from "./Rectangle 17.svg";
 import { useState } from "react";
 import chatListDetails from "../ChatListDetails/chatListdetails";
-
+import SettingsMenu from "../settings";
 import TopBar from "../topBar";
 import {
   PersonAdd,
@@ -20,8 +20,7 @@ import TopNav from "../topNav";
 import ChatListInd from "../chatListIndi";
 import ChatInterface from "../chatInterface";
 import OtherProfile from "../otherProfile";
-import UserProfile from "../userProfile";
-const test = 2;
+const test = 3;
 const CustomColor = { color: "rgba(155, 81, 224, 1)" };
 const icons = [
   { element: <PersonAdd style={CustomColor} />, isClicked: false, index: 0 },
@@ -96,15 +95,19 @@ const Dashboard = () => {
                   </div>
                 </div>
                 <div className="bottomRightContainer">
-                  {test == 0 && <ChatInterface />}
-                  {test == 1 && <OtherProfile />}
+                  {test === 0 && <ChatInterface />}
+                  {test === 1 && <OtherProfile />}
                 </div>
               </>
             )}
             {test == 2 && (
                 <UserProfile />
             )}
-            {test == 3 && <p>3</p>}
+            {test === 3 && (
+              <div>
+                <SettingsMenu />
+              </div>
+            )}
           </div>
         </div>
       </div>
