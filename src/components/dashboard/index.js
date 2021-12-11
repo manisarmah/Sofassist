@@ -20,7 +20,8 @@ import TopNav from "../topNav";
 import ChatListInd from "../chatListIndi";
 import ChatInterface from "../chatInterface";
 import OtherProfile from "../otherProfile";
-const test =3;
+import UserProfile from "../userProfile";
+const test = 2;
 const CustomColor = { color: "rgba(155, 81, 224, 1)" };
 const icons = [
   { element: <PersonAdd style={CustomColor} />, isClicked: false, index: 0 },
@@ -100,9 +101,10 @@ const Dashboard = () => {
                 </div>
               </>
             )}
-            {test ==2 && <p>2</p> }
-            {test ==3 && <p>3</p> }
-            
+            {test == 2 && (
+                <UserProfile />
+            )}
+            {test == 3 && <p>3</p>}
           </div>
         </div>
       </div>
