@@ -1,5 +1,7 @@
 import React from "react";
 import EncryptedDialog from "../encryptedDialog";
+import "./styles.css";
+import messages from "../messages";
 const ChatInterfaceMain = () => {
   return (
     <div>
@@ -7,8 +9,17 @@ const ChatInterfaceMain = () => {
         <EncryptedDialog />
       </div>
       <div className="chatMain">
-        <div className="chatMainLeft"></div>
-        <div className="chatMainRight"></div>
+        {messages.map((message) => (
+          <div className="chatMainDiv">
+            <p
+              className={
+                message.status == "sent" ? "chatMainRight" : "chatMainLeft"
+              }
+            >
+              {message.message}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );

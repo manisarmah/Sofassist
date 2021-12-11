@@ -1,0 +1,49 @@
+.encryptedDialog {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5vh 0 1vh;
+  /* background-color: blue; */
+}
+.chatMain {
+  height: 57.8vh;
+  /* background-color: brown; */
+}
+/* .chatMainDiv {
+  width: 100%;
+  height: initial;
+  background-color: blue;
+  display: block;
+} */
+.chatMainLeft {
+  width: 40%;
+  height: auto;
+  background-color: green;
+  float: left;
+  margin: 1vh 8vh;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 0.9rem;
+  background-color: #f5f5f5;
+  backdrop-filter: blur(20px);
+}
+.chatMainRight {
+  width: 40%;
+  height: auto;
+  background-color: yellow;
+  float: right;
+  margin: 1vh 8vh;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 0.9rem;
+  background-color: #faecff;
+  backdrop-filter: blur(20px);
+}
+/* .chatMain p {
+  height: 100%;
+  width: 40%;
+  background-color: red;
+  float: left;
+} */

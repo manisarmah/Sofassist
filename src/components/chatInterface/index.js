@@ -3,6 +3,7 @@ import "./style.css";
 import ChatInterfaceTopBar from "../ChatInterfaceTopBar";
 import ChatInput from "../chatInput";
 import ChatInterfaceMain from "../chatInterfaceMain";
+
 const ChatInterface = () => {
   return (
     <div className="chat_interface_container">

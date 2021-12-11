@@ -7,15 +7,15 @@
 .chat_interface_top_bar {
   height: 12vh;
   width: 100%;
-  background-color: #FBEFFF;
+  background-color: #fbefff;
 }
 .chat_interface_main {
-  height: 60.8vh;
+  height: 62.8vh;
   width: 100%;
   /* background-color: green; */
 }
 .chat_interface_input {
-  height: 15vh;
+  height: 13vh;
   width: 100%;
   /* background-color: yellow; */
 }
