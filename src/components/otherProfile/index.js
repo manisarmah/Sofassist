@@ -8,7 +8,9 @@ const OtherProfile = () => {
     <div className="outer_div_other_profile">
       <div className="upper_div_purple">
         <div className="text">
-          <ArrowBackIosIcon style={{ color: "rgba(155, 81, 224, 1)" }} />
+          <div className="btn">
+            <ArrowBackIosIcon style={{ color: "rgba(155, 81, 224, 1)" }} />
+          </div>
           <h4>Profile</h4>
         </div>
         <div className="image">

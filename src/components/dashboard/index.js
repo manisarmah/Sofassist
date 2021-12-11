@@ -100,7 +100,9 @@ const Dashboard = () => {
                 </div>
               </>
             )}
-            {test === 2 && <p>2</p>}
+            {test == 2 && (
+                <UserProfile />
+            )}
             {test === 3 && (
               <div className="settingsMenu">
                 <SettingsMenu />
