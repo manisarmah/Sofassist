@@ -14,6 +14,10 @@ const ChatInput = () => {
     setInputStr((prevInput) => prevInput + emojiObject.emoji);
     setShowPicker(true);
   };
+  const [isTimed, setIsTimed] = React.useState(false);
+  const handleClick = () => {
+    setIsTimed(!isTimed);
+  };
 
   return (
     <div className="master_div_input">
@@ -40,13 +44,21 @@ const ChatInput = () => {
           />
         </div>
         <div className="searchBarIcons">
-          <button>
-            <TimerOutlinedIcon style={{ color: "#828282", fontSize: 25 }} />
+          <button onClick={handleClick}>
+            <TimerOutlinedIcon
+              style={{
+                color: isTimed ? "rgba(155, 81, 224, 1)" : "#828282",
+                fontSize: 25,
+              }}
+            />
           </button>
           <button onClick={() => setShowPicker((val) => !val)}>
             {" "}
             <EmojiEmotionsOutlinedIcon
-              style={{ color: "#828282", fontSize: 25 }}
+              style={{
+                color: showPicker ? "#f5b342" : "#828282",
+                fontSize: 25,
+              }}
             />
           </button>
           <button>

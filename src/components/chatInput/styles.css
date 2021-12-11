@@ -14,14 +14,14 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.137);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.103);
 }
 .sendInput {
   width: 7%;
   height: 50%;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.137);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.103);
 }
 
 .searchBarAdd {
