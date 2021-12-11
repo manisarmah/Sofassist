@@ -20,7 +20,7 @@ import TopNav from "../topNav";
 import ChatListInd from "../chatListIndi";
 import ChatInterface from "../chatInterface";
 import OtherProfile from "../otherProfile";
-
+const test =3;
 const CustomColor = { color: "rgba(155, 81, 224, 1)" };
 const icons = [
   { element: <PersonAdd style={CustomColor} />, isClicked: false, index: 0 },
@@ -76,20 +76,33 @@ const Dashboard = () => {
             <TopNav />
           </div>
           <div className="bottomContainer">
-            <div className="bottomLeftContainer">
-              <div className="topBar">
-                <TopBar />
-              </div>
-              <div className="bottomArea">
-              {chatListDetails.map((chatdetail)=>{
-              return  <ChatListInd src={chatdetail.image} name={chatdetail.name} msg={chatdetail.messagePH}/>
-              })}
-              </div>
-            </div>
-            <div className="bottomRightContainer">
-              {/* <ChatInterface/> */}
-              <OtherProfile/>
-            </div>
+            {test < 2 && (
+              <>
+                <div className="bottomLeftContainer">
+                  <div className="topBar">
+                    <TopBar />
+                  </div>
+                  <div className="bottomArea">
+                    {chatListDetails.map((chatdetail) => {
+                      return (
+                        <ChatListInd
+                          src={chatdetail.image}
+                          name={chatdetail.name}
+                          msg={chatdetail.messagePH}
+                        />
+                      );
+                    })}
+                  </div>
+                </div>
+                <div className="bottomRightContainer">
+                  {test == 0 && <ChatInterface />}
+                  {test == 1 && <OtherProfile />}
+                </div>
+              </>
+            )}
+            {test ==2 && <p>2</p> }
+            {test ==3 && <p>3</p> }
+            
           </div>
         </div>
       </div>

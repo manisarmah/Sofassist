@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import chatListDetails from "../ChatListDetails/chatListdetails";
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined";
 const OtherProfile = () => {
@@ -8,7 +8,7 @@ const OtherProfile = () => {
     <div className="outer_div_other_profile">
       <div className="upper_div_purple">
         <div className="text">
-        <ArrowBackIosIcon style={{color:"rgba(155, 81, 224, 1)"}}/>
+          <ArrowBackIosIcon style={{ color: "rgba(155, 81, 224, 1)" }} />
           <h4>Profile</h4>
         </div>
         <div className="image">
@@ -29,10 +29,10 @@ const OtherProfile = () => {
               <div className="content"></div>
               <div className="content"></div>
               <button className="view_all">
-                  <ArrowCircleRightOutlinedIcon
-                    style={{ fontSize: "2rem", color: "#828282" }}
-                  />
-                  View All
+                <ArrowCircleRightOutlinedIcon
+                  style={{ fontSize: "2rem", color: "#828282" }}
+                />
+                View All
               </button>
             </div>
           </div>
