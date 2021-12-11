@@ -7,6 +7,7 @@ import { useState } from "react";
 import chatListDetails from "../ChatListDetails/chatListdetails";
 import SettingsMenu from "../settings";
 import TopBar from "../topBar";
+import UserProfile from "../userProfile";
 import {
   PersonAdd,
   FolderOpen,
@@ -101,11 +102,9 @@ const Dashboard = () => {
                 </div>
               </>
             )}
-            {test == 2 && (
-                <UserProfile />
-            )}
+            {test == 2 && <UserProfile />}
             {test === 3 && (
-              <div>
+              <div className="settingsMenu">
                 <SettingsMenu />
               </div>
             )}

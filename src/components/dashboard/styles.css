@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html,
 body {
   height: 100%;
@@ -80,7 +80,6 @@ body {
   width: 68%;
   height: 87.8vh;
   position: relative;
-
 }
 .bottomArea {
   overflow-x: hidden;
@@ -88,26 +87,37 @@ body {
   height: 74.8vh;
   width: 100%;
 }
-::-webkit-scrollbar {
+.bottomArea::-webkit-scrollbar {
   width: 5px;
   height: 15px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+.bottomArea::-webkit-scrollbar-track {
   background: transparent;
 }
 
-::-webkit-scrollbar-button {
+.bottomArea::-webkit-scrollbar-button {
   height: 25vh;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+.bottomArea::-webkit-scrollbar-thumb {
   background: #bb6bd9;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+.bottomArea::-webkit-scrollbar-thumb:hover {
   background: #af3dd8;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+.settingsMenu {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
