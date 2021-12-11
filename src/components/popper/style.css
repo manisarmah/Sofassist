@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 button {
   outline: none;
   border: none;
@@ -5,22 +6,29 @@ button {
   cursor: pointer;
 }
 .outer_div_popper {
-    position: absolute;
-    top: 68px;
-    right: 12px;
-    background-color: #FBEFFF;
-    border-radius: 4px;
-    width: 10vw;
-    padding: 5px 26px;
+  position: absolute;
+  top: 68px;
+  right: 12px;
+  background-color: #fbefff;
+  border-radius: 4px;
+  width: 10vw;
+  padding: 5px 26px;
+  z-index: 1;
 }
 .outer_div_popper li {
-    width: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+  width: 100%;
   list-style: none;
   text-align: center;
   margin: 1vh 0;
   padding-bottom: 1vh;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #b1afaf;
+  cursor: pointer;
 }
-.outer_div_popper li:last-child{
-    border: none;
-} 
+.outer_div_popper li:hover {
+  color: #b947e2;
+}
+.outer_div_popper li:last-child {
+  border: none;
+}
