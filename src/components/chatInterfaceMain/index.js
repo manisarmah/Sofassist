@@ -2,6 +2,7 @@ import React from "react";
 import EncryptedDialog from "../encryptedDialog";
 import "./styles.css";
 import messages from "../messages";
+import symbols from "../symbols";
 const ChatInterfaceMain = () => {
   return (
     <div>
@@ -11,13 +12,19 @@ const ChatInterfaceMain = () => {
       <div className="chatMain">
         {messages.map((message) => (
           <div className="chatMainDiv">
-            <p
+            <div
               className={
-                message.status == "sent" ? "chatMainRight" : "chatMainLeft"
+                message.status === 3 ? "chatMainLeft" : "chatMainRight"
               }
             >
-              {message.message}
-            </p>
+              <div> {message.message}</div>
+              <div className="sentStatus">
+                {" "}
+                {message.status !== 3 && (
+                  <div className="iconStatus">{symbols[message.status]}</div>
+                )}
+              </div>
+            </div>
           </div>
         ))}
       </div>

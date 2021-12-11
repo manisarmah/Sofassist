@@ -80,13 +80,19 @@ const Dashboard = () => {
                 <TopBar />
               </div>
               <div className="bottomArea">
-              {chatListDetails.map((chatdetail)=>{
-              return  <ChatListInd src={chatdetail.image} name={chatdetail.name} msg={chatdetail.messagePH}/>
-              })}
+                {chatListDetails.map((chatdetail) => {
+                  return (
+                    <ChatListInd
+                      src={chatdetail.image}
+                      name={chatdetail.name}
+                      msg={chatdetail.messagePH}
+                    />
+                  );
+                })}
               </div>
             </div>
             <div className="bottomRightContainer">
-              <ChatInterface/>
+              <ChatInterface />
             </div>
           </div>
         </div>
