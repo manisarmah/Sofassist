@@ -14,6 +14,10 @@ const ChatInput = () => {
     setInputStr((prevInput) => prevInput + emojiObject.emoji);
     setShowPicker(true);
   };
+  const [isTimed, setIsTimed] = React.useState(false);
+  const handleClick = () => {
+    setIsTimed(!isTimed);
+  };
 
   return (
     <div className="master_div_input">
@@ -27,7 +31,9 @@ const ChatInput = () => {
       </div>
       <div className="searchBarInput">
         <div className="searchBarAdd">
-          <Add size={{ fontSize: 40 }} style={{ color: "#828282" }} />
+          <button>
+            <Add style={{ color: "#828282", fontSize: 30 }} />
+          </button>
         </div>
         <div className="searchBarMain">
           <input
@@ -38,23 +44,26 @@ const ChatInput = () => {
           />
         </div>
         <div className="searchBarIcons">
-          <button>
+          <button onClick={handleClick}>
             <TimerOutlinedIcon
-              size={{ fontSize: 30 }}
-              style={{ color: "#828282" }}
+              style={{
+                color: isTimed ? "rgba(155, 81, 224, 1)" : "#828282",
+                fontSize: 25,
+              }}
             />
           </button>
           <button onClick={() => setShowPicker((val) => !val)}>
             {" "}
             <EmojiEmotionsOutlinedIcon
-              size={{ fontSize: 30 }}
-              style={{ color: "#828282" }}
+              style={{
+                color: showPicker ? "#f5b342" : "#828282",
+                fontSize: 25,
+              }}
             />
           </button>
           <button>
             <KeyboardVoiceOutlinedIcon
-              size={{ fontSize: 30 }}
-              style={{ color: "#828282" }}
+              style={{ color: "#828282", fontSize: 25 }}
             />
           </button>
         </div>
@@ -62,8 +71,7 @@ const ChatInput = () => {
       <div className="sendInput">
         <button>
           <SendOutlinedIcon
-            size={{ fontSize: 25 }}
-            style={{ color: "#9B51E0", fontWeight: "300" }}
+            style={{ color: "#9B51E0", fontWeight: "300", fontSize: 27 }}
           />
         </button>
       </div>
