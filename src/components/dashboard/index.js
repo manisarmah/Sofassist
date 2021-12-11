@@ -20,7 +20,7 @@ import TopNav from "../topNav";
 import ChatListInd from "../chatListIndi";
 import ChatInterface from "../chatInterface";
 import OtherProfile from "../otherProfile";
-const test = 3;
+const test = 0;
 const CustomColor = { color: "rgba(155, 81, 224, 1)" };
 const icons = [
   { element: <PersonAdd style={CustomColor} />, isClicked: false, index: 0 },
@@ -102,7 +102,7 @@ const Dashboard = () => {
             )}
             {test === 2 && <p>2</p>}
             {test === 3 && (
-              <div>
+              <div className="settingsMenu">
                 <SettingsMenu />
               </div>
             )}

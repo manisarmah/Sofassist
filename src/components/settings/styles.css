@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.masterDiv {
+  height: 83.8vh;
+  margin-top: 4vh;
+  width: 80%;
+  background-color: #ebe8e8b4;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 8px 6px 0 0;
+}
+.masterDiv::-webkit-scrollbar {
+  width: 0;
+}
+
+.topPartSettings {
+  height: 15vh;
+  width: 100%;
+  background: rgb(219, 174, 240);
+  background: linear-gradient(
+    90deg,
+    rgb(211, 156, 236) 28%,
+    rgba(194, 86, 236, 1) 65%
+  );
+  border-radius: 5px;
+  font-size: 2.5rem;
+  padding-top: 6vh;
+  padding-left: 3vw;
+  color: white;
+  font-family: "Lato", sans-serif;
+  position: sticky;
+  top: 0;
+}
+
+.settingsOptions {
+  margin: 4vh 6vh;
+}
+.settingsOptions ul {
+  list-style: none;
+}
+.settingsOptions h3 {
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 1vh;
+  font-weight: 400;
+  color: rgb(122, 120, 120);
+}
+.settingsOptions li {
+  padding-bottom: 0.5rem;
+  font-family: "Lato", sans-serif;
+}

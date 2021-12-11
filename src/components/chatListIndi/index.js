@@ -4,7 +4,7 @@ import ChatListStatus from "../chatListStatus";
 import ChatListText from "../chatListText";
 import "./style.css";
 
-const ChatListInd = ({src,name,msg}) => {
+const ChatListInd = ({ src, name, msg }) => {
   return (
     <div>
       <div className="outer_div_chatList">
@@ -13,10 +13,10 @@ const ChatListInd = ({src,name,msg}) => {
         </div>
         <div className="chatList_data">
           <div className="chatList_data_text">
-            <ChatListText name={name} msg={msg}/>
+            <ChatListText name={name} msg={msg} />
           </div>
           <div className="chatList_status">
-            <ChatListStatus/>
+            <ChatListStatus />
           </div>
         </div>
       </div>
