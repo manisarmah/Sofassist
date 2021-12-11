@@ -5,7 +5,7 @@ import DarkModeIcon from "../darkModeIcon";
 import Profile from "./Rectangle 17.svg";
 import { useState } from "react";
 import chatListDetails from "../ChatListDetails/chatListdetails";
-
+import SettingsMenu from "../settings";
 import TopBar from "../topBar";
 import {
   PersonAdd,
@@ -19,7 +19,8 @@ import {
 import TopNav from "../topNav";
 import ChatListInd from "../chatListIndi";
 import ChatInterface from "../chatInterface";
-
+import OtherProfile from "../otherProfile";
+const test = 3;
 const CustomColor = { color: "rgba(155, 81, 224, 1)" };
 const icons = [
   { element: <PersonAdd style={CustomColor} />, isClicked: false, index: 0 },
@@ -75,25 +76,36 @@ const Dashboard = () => {
             <TopNav />
           </div>
           <div className="bottomContainer">
-            <div className="bottomLeftContainer">
-              <div className="topBar">
-                <TopBar />
+            {test < 2 && (
+              <>
+                <div className="bottomLeftContainer">
+                  <div className="topBar">
+                    <TopBar />
+                  </div>
+                  <div className="bottomArea">
+                    {chatListDetails.map((chatdetail) => {
+                      return (
+                        <ChatListInd
+                          src={chatdetail.image}
+                          name={chatdetail.name}
+                          msg={chatdetail.messagePH}
+                        />
+                      );
+                    })}
+                  </div>
+                </div>
+                <div className="bottomRightContainer">
+                  {test === 0 && <ChatInterface />}
+                  {test === 1 && <OtherProfile />}
+                </div>
+              </>
+            )}
+            {test === 2 && <p>2</p>}
+            {test === 3 && (
+              <div>
+                <SettingsMenu />
               </div>
-              <div className="bottomArea">
-                {chatListDetails.map((chatdetail) => {
-                  return (
-                    <ChatListInd
-                      src={chatdetail.image}
-                      name={chatdetail.name}
-                      msg={chatdetail.messagePH}
-                    />
-                  );
-                })}
-              </div>
-            </div>
-            <div className="bottomRightContainer">
-              <ChatInterface />
-            </div>
+            )}
           </div>
         </div>
       </div>

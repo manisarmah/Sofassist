@@ -2,7 +2,6 @@ import React from "react";
 import chatdetails from "../ChatListDetails/chatListdetails";
 import "./style.css";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import MenuIcon from "../menuIcon";
 import PositionedPopper from "../popper";
 
 const ChatInterfaceTopBar = () => {
