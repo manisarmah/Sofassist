@@ -1,12 +1,10 @@
 .outer_div_chatList{
     width: 100%;
-    height: 12vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background:
-    linear-gradient(0deg,rgba(255, 255, 255, 0.7) -17%,
-    rgba(255, 255, 255, 0.2) 87%);
+
 }
 .outer_div_chatList .chatList_icon{
     width: 17%;
@@ -29,4 +27,21 @@
 .outer_div_chatList .chatList_data .chatList_status{
     height: 100%;
     width: 20%;
+}
+.icon_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.icons{
+    /* background-color: red; */
+    width: 40%;
+    text-align: center;
+    /* padding: 2%; */
+    float: right;
+}
+.wrap_chatList{
+    background:
+    linear-gradient(0deg,rgba(255, 255, 255, 0.7) -17%,
+    rgba(255, 255, 255, 0.2) 87%);
 }

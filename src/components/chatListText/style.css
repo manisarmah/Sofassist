@@ -14,3 +14,6 @@
 .chatList_texts p{
     font-size: 0.6rem;
 }
+.msgText{
+    flex: 1;
+}
