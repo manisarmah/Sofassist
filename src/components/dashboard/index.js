@@ -7,7 +7,6 @@ import { useState } from "react";
 import chatListDetails from "../ChatListDetails/chatListdetails";
 import SettingsMenu from "../settings";
 import TopBar from "../topBar";
-import UserProfile from "../userProfile";
 import {
   PersonAdd,
   FolderOpen,
@@ -22,7 +21,7 @@ import ChatListInd from "../chatListIndi";
 import ChatInterface from "../chatInterface";
 import OtherProfile from "../otherProfile";
 import UserProfile from "../userProfile";
-const test = 2;
+const test = 0;
 const CustomColor = { color: "rgba(155, 81, 224, 1)" };
 const icons = [
   { element: <PersonAdd style={CustomColor} />, isClicked: false, index: 0 },

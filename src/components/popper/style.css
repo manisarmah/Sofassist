@@ -9,8 +9,9 @@ button {
   position: absolute;
   top: 68px;
   right: 12px;
-  background-color: #fbefff;
+  background-color: #f3d1ff;
   border-radius: 4px;
+  opacity: 0.9;
   width: 10vw;
   padding: 5px 26px;
   z-index: 1;
